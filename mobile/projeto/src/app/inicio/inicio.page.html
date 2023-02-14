@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Compras</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>
+        COMIDAS
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-list lines="none">
+
+      <ion-item-sliding>
+        <ion-item button (click)="somar()" detail>
+          <ion-label>Arroz</ion-label>
+        </ion-item>
+        <ion-item-options slot="end">
+          <ion-item-option color="success">
+            Salvar
+          </ion-item-option>
+          <ion-item-option color="danger">
+            Cancelar
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+
+
+      <ion-item>
+        <ion-label>Feijão</ion-label>
+      </ion-item>
+      <ion-item href="https://www.google.com">
+        <ion-label>Macarrão</ion-label>
+        <ion-icon name="rose-outline"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-item-group>
+  <ion-item-group>
+    <ion-item-divider>
+      <ion-label>
+        BEBIDAS
+      </ion-label>
+    </ion-item-divider>
+    <ion-list lines="none">
+      <ion-item color="green">
+        <ion-label class="ion-text-wrap">Cerveja</ion-label>
+        <ion-icon name="headset-outline" slot="start"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-item-group>
+
+
+
+  <!-- <ion-list lines="none">
+
+    <ion-item button detail>
+      <ion-label class="ion-text-wrap">
+        <h3>Google</h3>
+        <p>A missão do Google é organizar as informações do mundo todo e torná-las universalmente acessíveis e úteis.
+          Saiba mais sobre a história de nossa empresa</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button detail>
+      <ion-label class="ion-text-wrap">
+        <h3>Instagram</h3>
+        <p>O Instagram foi criado por Kevin Systrom e pelo brasileiro Mike Krieger em 2010. Em poucos meses, a rede
+          social se tornou um dos aplicativos</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item button detail>
+      <ion-label class="ion-text-wrap">
+        <h3>LinkedIn</h3>
+        <p>O LinkedIn começou na sala de estar do nosso cofundador Reid Hoffman e foi lançado oficialmente em 5 de maio
+          de 2003. Hoje, sob a liderança de Ryan Roslansky,</p>
+      </ion-label>
+    </ion-item>
+
+
+  </ion-list> -->
+
+</ion-content>
