@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>AULA 03</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--
+  <ion-list lines="full">
+
+    <ion-item>
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-input placeholder="Fulano"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Logradouro</ion-label>
+      <ion-input placeholder="Rua tal..."></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Numero</ion-label>
+      <ion-input type="number" placeholder="88"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email" placeholder="fulano@gmail.com"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Telefone</ion-label>
+      <ion-input type="tel" placeholder="888-888-8888"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button size="large">Enviar
+    <ion-icon slot="start" name="star"></ion-icon>
+  </ion-button>
+
+  <ion-list lines="full">
+
+    <ion-item>
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Endereço</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-button color="success" expand="full">Salvar</ion-button>
+    <ion-button color="danger" expand="full">Cancelar</ion-button>
+  </ion-list>
+-->
+  <ion-list lines="full">
+
+    <ion-item>
+      <ion-label position="stacked">Nome</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="email" placeholder="login@ifpe.edu.br"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Idade</ion-label>
+      <ion-input type="number" placeholder="Digite a idade (numeros)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Curso</ion-label>
+      <ion-select placeholder="Seleccione o Curso">
+        <ion-select-option value="lic">Lic. em informatica</ion-select-option>
+        <ion-select-option value="inf">Tec em informatica</ion-select-option>
+        <ion-select-option value="san">Saneamento</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Bolsista</ion-label>
+      <ion-toggle slot="end"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Auxílio</ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Tempetatura</ion-label>
+      <ion-range>
+        <ion-icon slot="end" name="snow-outline"></ion-icon>
+        <ion-icon slot="start" name="sunny-outline"></ion-icon>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Senha</ion-label>
+      <ion-input type="password" placeholder="Senha"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button color="success" expand="full" shape="round">
+    <ion-icon name="save-outline" slot="end"></ion-icon>
+    Salvar</ion-button>
+</ion-content>
