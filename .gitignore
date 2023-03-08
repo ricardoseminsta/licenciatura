@@ -8,3 +8,5 @@ plugins
 *.swo
 *.log
 *.DS_Store
+IA/.ipynb_checkpoints/knn_iris_hashtag-checkpoint.ipynb
+IA/.ipynb_checkpoints/lic_ia_knn-checkpoint.ipynb
