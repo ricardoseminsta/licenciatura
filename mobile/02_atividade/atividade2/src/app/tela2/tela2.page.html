@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Questionário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>Qual a capital de Pernambuco?</ion-item>
+    <ion-radio-group value="capital">
+      <ion-item>
+        <ion-label>São Paulo</ion-label>
+        <ion-radio slot="end" value="sp"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Fortaleza</ion-label>
+        <ion-radio slot="end" value="for"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Recife</ion-label>
+        <ion-radio slot="end" value="rec"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Salvador</ion-label>
+        <ion-radio slot="end" value="sal"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>Qual é um comando apenas condicional?</ion-item>
+    <ion-radio-group value="capital">
+      <ion-item>
+        <ion-label>FOR</ion-label>
+        <ion-radio slot="end" value="for"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>IF</ion-label>
+        <ion-radio slot="end" value="if" checked></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>WHILE</ion-label>
+        <ion-radio slot="end" value="whi"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>PRINT</ion-label>
+        <ion-radio slot="end" value="pri"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-button expand="full" color="success" shape="round"> <ion-icon name="save-outline" slot="end"></ion-icon>
+    SALVAR</ion-button>
+  <ion-button expand="full" color="danger" shape="round"> <ion-icon name="close-outline" slot="end"></ion-icon>
+    CANCELAR</ion-button>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "atividade2tabs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
