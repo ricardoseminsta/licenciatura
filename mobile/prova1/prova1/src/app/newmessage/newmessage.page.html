@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/">Voltar</ion-back-button>
+    </ion-buttons>
+    <ion-title>Nova Mensagem</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-label position="stacked">De:</ion-label>
+          <ion-input value="Ricardo Emanuel [ricardo.silva@afogados,ifpe.edu.br]" disabled="true"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Para:</ion-label>
+          <ion-input placeholder="Destinatários"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Assunto:</ion-label>
+          <ion-input placeholder="Destinatários"></ion-input>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-textarea placeholder="Digite aqui o seu email"></ion-textarea>
+    </ion-card-content>
+  </ion-card>
+  <ion-button expand="full">ENVIAR</ion-button>
+  <ion-button expand="full" color="danger">CANCELAR</ion-button>
+</ion-content>
