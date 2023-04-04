@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 2
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-item>
+  <ion-label>Senha Digitada: {{senhaDigitada}}</ion-label>
+</ion-item>
+
+  <ion-button disabled={{botao}}>Entrar</ion-button>
+<br/>
+  <ion-button (click)="adicionarDigito(0)">0</ion-button>
+  <ion-button (click)="adicionarDigito(1)">1</ion-button>
+  <ion-button (click)="adicionarDigito(2)">2</ion-button>
+  <ion-button (click)="adicionarDigito(3)">3</ion-button>
+  <ion-button (click)="adicionarDigito(4)">4</ion-button>
+  <ion-button (click)="adicionarDigito(5)">5</ion-button>
+  <ion-button (click)="adicionarDigito(6)">6</ion-button>
+  <ion-button (click)="adicionarDigito(7)">7</ion-button>
+  <ion-button (click)="adicionarDigito(8)">8</ion-button>
+  <ion-button (click)="adicionarDigito(9)">9</ion-button>
+  <br/>
+  <ion-button (click)="limpar()">LIMPAR</ion-button>
+</ion-content>

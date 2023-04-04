@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label>
+        Fluxo de caixa
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        Entrada R$ {{valorEntrada}},00
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>
+        Saida R$ {{valorSaida}},00
+      </ion-label>
+    </ion-item>
+
+    <ion-item color={{classe}} >
+      <ion-label>
+        Total em caixa R$ {{valorTotal}},00
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button color="primary" (click)="somar()">Adicionar R$ 1,00</ion-button>
+<ion-button color="danger" (click)="subtrair()">Retirar R$ 1,00</ion-button>
+</ion-content>
