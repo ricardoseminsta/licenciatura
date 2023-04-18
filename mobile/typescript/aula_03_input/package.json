@@ -1,5 +1,5 @@
 {
-  "name": "aula_02_input",
+  "name": "aula_03_input",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -27,6 +27,7 @@
     "@ionic/angular": "^7.0.0",
     "ionicons": "^7.0.0",
     "rxjs": "~7.5.0",
+    "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -59,7 +60,6 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "ts-node": "~8.3.0",
-    "tslib": "^2.5.0",
     "typescript": "~4.8.4"
   },
   "description": "An Ionic project"

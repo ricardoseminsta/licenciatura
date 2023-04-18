@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-label>Senha:</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Status: {{status}} </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-button (click)="logar()" disabled={{desativado}}>Logar</ion-button>
+  </ion-item>
+</ion-content>
