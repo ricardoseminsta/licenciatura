@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Datas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-list lines="full">
+   <ion-item>
+    <ion-label class="ion-text-wrap" >Data Atual: {{dataAtualFront}}</ion-label>
+   </ion-item>
+   <ion-item>
+     <ion-label slot="start">Data de Nascimento:</ion-label>
+     <ion-input type="date" slot="end" [(ngModel)]="dtNascimento"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label class="ion-text-wrap" >Dias Passados: {{lifeTimeDays}}</ion-label>
+   </ion-item>
+   <ion-item>
+    <ion-label class="ion-text-wrap" >Meses Passado: {{lifeTimeMonths}}</ion-label>
+   </ion-item>
+   <ion-item>
+    <ion-label class="ion-text-wrap" >Anos Passado: {{lifeTimeYears}}</ion-label>
+   </ion-item>
+ </ion-list>
+ <ion-button (click)="calcularLifeTime()">Enviar</ion-button>
+</ion-content>

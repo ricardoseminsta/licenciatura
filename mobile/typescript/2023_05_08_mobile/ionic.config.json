@@ -1,0 +1,7 @@
+{
+  "name": "2023_05_08_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
