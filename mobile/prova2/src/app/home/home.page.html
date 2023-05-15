@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Questão 1 - Msg Boas Vindas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-list>
+   <ion-item>
+     <ion-label>Nome:</ion-label>
+     <ion-input type="text"  [(ngModel)]="nome"></ion-input>
+   </ion-item>
+   <ion-item>
+    <ion-label>Nome:</ion-label>
+    <ion-input type="date" slot="end" [(ngModel)]="dtNascimento"></ion-input>
+  </ion-item>
+ </ion-list>
+ <ion-button (click)="mostrarMsgBoasVindas()">Enviar</ion-button>
+ <ion-item>
+  <ion-label class="ion-text-wrap">{{msgBoasVindas}}</ion-label>
+ </ion-item>
+</ion-content>
