@@ -1,0 +1,88 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> HOME </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item lines="none">
+    <ion-chip (click)="itemSelecionado = 'rock'">Rock</ion-chip>
+    <ion-chip color="danger" (click)="itemSelecionado = 'forro'"
+      >Forro</ion-chip
+    >
+    <ion-chip color="warning" (click)="itemSelecionado = 'samba'"
+      >Samba</ion-chip
+    >
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label class="ion-text-nowrap">Escolha uma Opção</ion-label>
+  </ion-item>
+  <ion-item [ngSwitch]="itemSelecionado">
+    <ion-card *ngSwitchCase="'rock'">
+      <img
+        alt="Silhouette of mountains"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Onalaska-Practice6.jpg/800px-Onalaska-Practice6.jpg"
+      />
+      <ion-card-header>
+        <ion-card-title>Rock and roll</ion-card-title>
+        <ion-card-subtitle>História</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Por se tratar de gêneros musicais que foram influenciados e influenciam
+        em ritmo acelerado, a delimitação exata de onde termina o R&B ou o soul
+        e começa o rock and roll é impossível de ser apontada, mas aceita-se que
+        as "origens" do rock and roll remontam entre as décadas de 1940 e 1950,
+        através de uma combinação de diversos gêneros musicais populares na
+        época. Estes incluíram: o gospel, a folk, o blues - em especial as
+        formas elétricas desenvolvidas em Memphis, Nova Orleans e Texas - à base
+        do boogie woogie tocado no piano e um jump blues, que se tornaram
+        conhecidos como a fusão R&B. Também adicionaram-se influências de
+        country e jazz.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'forro'">
+      <img
+        alt="Silhouette of mountains"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Forrozeiros_%289290035008%29.jpg/220px-Forrozeiros_%289290035008%29.jpg"
+      />
+      <ion-card-header>
+        <ion-card-title>Forro</ion-card-title>
+        <ion-card-subtitle>História</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Forró é uma festa originária do estado de Pernambuco e disseminada na
+        Região Nordeste do Brasil, bastante popular e comum, especialmente nas
+        festas juninas. O nome da festa forró é usado para nomear distintos
+        gêneros musicais como o xote, baião, arrasta-pé e o xaxado, por isso
+        quem não conhece suas histórias, as confundem com um gênero único. As
+        músicas são executadas tradicionalmente por trios instrumentais com
+        acordeão ("sanfona"), zabumba e triângulo.
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngSwitchCase="'samba'">
+      <img
+        alt="Silhouette of mountains"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Ismael_Silva.tif/lossy-page1-220px-Ismael_Silva.tif.jpg"
+      />
+      <ion-card-header>
+        <ion-card-title>Samba</ion-card-title>
+        <ion-card-subtitle>História</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        Samba, também conhecido como samba urbano carioca ou simplesmente samba
+        carioca, é um gênero musical brasileiro que se originou entre as
+        comunidades afro-brasileiras urbanas do Rio de Janeiro no início do
+        século XX. Tendo suas raízes na expressão cultural da África Ocidental e
+        nas tradições folclóricas brasileiras, especialmente aquelas ligadas ao
+        samba rural primitivo dos períodos colonial e imperial, é considerado um
+        dos mais importantes fenômenos culturais do Brasil e um dos símbolos do
+        país.[
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-content>
