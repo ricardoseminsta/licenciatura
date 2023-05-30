@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>AULA FOR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item >
+    <ion-label>Nome Aluno</ion-label>
+    <ion-input type="text" [(ngModel)]="aluno"></ion-input></ion-item>
+  <ion-item >
+    <ion-label>Média</ion-label>
+    <ion-input type="text" [(ngModel)]="media"></ion-input></ion-item>
+
+  <ion-button expand="block" (click)="cadastraAluno(aluno, media)">Cadastrar</ion-button>
+
+
+  <ion-item *ngIf="alunos.length === 0">
+    <ion-label>Não Existem Alunos Cadastrados</ion-label>
+  </ion-item>
+
+  <ion-list *ngFor="let aluno of alunos, let i = index">
+
+    <ion-item-sliding *ngIf="alunos.length > 0">
+      <ion-item>
+        <ion-label slot="start">{{i + 1}} - {{aluno}}
+        </ion-label>
+        <ion-chip color="primary" slot='end'>Média {{medias[i]}}</ion-chip>
+      </ion-item>
+
+      <ion-item-options side="end">
+        <ion-item-option (click)="apagar(i)" color="danger">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+
+
+  </ion-list>
+</ion-content>

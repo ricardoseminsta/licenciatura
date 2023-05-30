@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'aula-for',
+    loadChildren: () => import('./aula-for/aula-for.module').then( m => m.AulaForPageModule)
   },
+
 ];
 
 @NgModule({
