@@ -13,6 +13,7 @@
     <ion-input type="text" [(ngModel)]="media"></ion-input></ion-item>
 
   <ion-button expand="block" (click)="cadastraAluno(aluno, media)">Cadastrar</ion-button>
+  <ion-button expand="block" color="danger" (click)="apagarTudo()" >Apagar Tudo</ion-button>
 
 
   <ion-item *ngIf="alunos.length === 0">

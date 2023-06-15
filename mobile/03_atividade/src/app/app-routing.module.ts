@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'aula-for',
     loadChildren: () => import('./aula-for/aula-for.module').then( m => m.AulaForPageModule)
   },
+  {
+    path: 'camera',
+    loadChildren: () => import('./camera/camera.module').then( m => m.CameraPageModule)
+  },
 
 ];
 
