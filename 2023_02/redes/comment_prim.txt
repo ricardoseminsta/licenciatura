@@ -1,0 +1,41 @@
+import heapq: Isso importa o módulo heapq, que é usado para implementar uma fila de prioridade (min-heap) em Python.
+
+import random: Isso importa o módulo random, que é usado para gerar números aleatórios.
+
+n, m = input().split(): Esta linha lê a entrada do usuário, que consiste em duas variáveis separadas por espaço, e as atribui a n e m.
+
+n = int(n): Converte a variável n para um inteiro.
+
+m = int(m): Converte a variável m para um inteiro.
+
+H = []: Inicializa uma lista vazia chamada H.
+
+n_out = [[]*n for i in range(n)]: Cria uma lista de listas chamada n_out com n sublistas vazias.
+
+O loop for j in range(m): começa a ler as arestas. Ele vai executar m vezes.
+
+a, b, c = input().split(): Lê três valores da entrada do usuário separados por espaço e os atribui a a, b e c.
+
+a = int(a), b = int(b), c = int(c): Converte a, b e c para inteiros.
+
+n_out[a].append((b, c)): Adiciona uma tupla (b, c) à lista n_out na posição a.
+
+n_out[b].append((a, c)): Adiciona uma tupla (a, c) à lista n_out na posição b.
+
+raiz = random.randint(0, n - 1): Escolhe aleatoriamente um número entre 0 e n - 1 e atribui-o a raiz. Isso define a raiz da árvore geradora mínima.
+
+O loop for (x, c) in n_out[raiz]: itera sobre todas as arestas conectadas à raiz e as adiciona a uma fila de prioridade chamada H com o custo c.
+
+Inicializa algumas variáveis, como n_edges para rastrear o número de arestas na árvore geradora mínima, custo_tot para rastrear o custo total da árvore e marcados para rastrear quais nós já foram marcados como parte da árvore geradora mínima. Além disso, inicia uma lista vazia chamada arv_ger_min para manter as arestas da árvore geradora mínima.
+
+O loop principal continua até que n_edges seja igual a n - 1, ou seja, até que a árvore geradora mínima tenha n - 1 arestas.
+
+Dentro do loop principal, há um loop interno que encontra a próxima aresta candidata a ser adicionada à árvore geradora mínima. Ele verifica o topo da fila de prioridade H e seleciona a aresta com o menor custo que não leva a um nó já marcado.
+
+A aresta selecionada é adicionada à árvore geradora mínima (arv_ger_min), o nó de destino é marcado como parte da árvore (marcados), e o custo da aresta é adicionado ao custo total (custo_tot).
+
+Em seguida, todas as arestas conectadas ao nó recém-marcado são adicionadas à fila de prioridade H, desde que o outro extremo da aresta não esteja marcado.
+
+O loop principal continua até que a árvore geradora mínima esteja completa, e, em seguida, imprime o custo total e as arestas da árvore.
+
+Em resumo, este código implementa o algoritmo de Prim para encontrar a árvore geradora mínima em um grafo não direcionado com pesos nas arestas. Ele começa com um nó raiz aleatório, adiciona repetidamente a aresta de menor custo que conecta um nó marcado a um não marcado até que a árvore esteja completa.

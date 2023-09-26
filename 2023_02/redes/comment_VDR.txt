@@ -1,0 +1,33 @@
+Claro, vou explicar o código linha por linha:
+
+1. `class Roteador:`: Aqui, estamos definindo uma classe chamada `Roteador` que representa um roteador em nossa simulação.
+
+2. `def _init_(self, nome):`: Este é o método construtor da classe `Roteador`. Ele é chamado quando você cria uma instância de `Roteador` e recebe um parâmetro `nome` que é o nome do roteador.
+
+3. `self.nome = nome`: Isso atribui o nome passado como parâmetro à instância do roteador. Cada roteador terá um nome único.
+
+4. `self.tabela_rotas = {}`: Inicializamos uma tabela de roteamento vazia para o roteador. Esta tabela será usada para armazenar informações sobre as rotas conhecidas.
+
+5. `def adicionar_rota(self, destino, custo, proximo_salto):`: Este método permite adicionar uma nova rota à tabela de roteamento do roteador. Recebe três parâmetros: o `destino` da rota, o `custo` associado a essa rota e o `proximo_salto`, ou seja, para onde enviar pacotes destinados a esse destino.
+
+6. `self.tabela_rotas[destino] = (custo, proximo_salto)`: Adiciona a rota à tabela de roteamento, usando o destino como chave e uma tupla contendo o custo e o próximo salto como valor.
+
+7. `def atualizar_rota(self, destino, novo_custo, novo_proximo_salto):`: Este método permite atualizar uma rota existente na tabela de roteamento. Ele verifica se a rota já existe, compara o novo custo com o custo atual e, se o novo custo for menor, atualiza a rota.
+
+8. `if destino in self.tabela_rotas:`: Verifica se o destino já está na tabela de roteamento.
+
+9. `custo_atual, proximo_salto_atual = self.tabela_rotas[destino]`: Obtém o custo e o próximo salto atual para o destino.
+
+10. `if novo_custo < custo_atual:`: Compara o novo custo com o custo atual.
+
+11. `self.tabela_rotas[destino] = (novo_custo, novo_proximo_salto)`: Se o novo custo for menor, atualiza a rota na tabela de roteamento.
+
+12. `def imprimir_tabela_rotas(self):`: Este método imprime a tabela de roteamento do roteador.
+
+13. `print(f"Tabela de Roteamento do Roteador {self.nome}:")`: Imprime um cabeçalho com o nome do roteador.
+
+14. `for destino, (custo, proximo_salto) in self.tabela_rotas.items():`: Itera sobre as entradas da tabela de roteamento, que consistem em pares (destino, (custo, proximo_salto)).
+
+15. `print(f"Destino: {destino}, Custo: {custo}, Próximo Salto: {proximo_salto}")`: Imprime as informações de cada rota na tabela.
+
+As linhas finais do código criam três roteadores (A, B e C), adicionam rotas iniciais às suas tabelas de roteamento e realizam uma simulação simples de atualização de rota para demonstrar como os roteadores podem trocar informações para atualizar suas tabelas de roteamento. Em seguida, as tabelas de roteamento são impressas para visualização.
