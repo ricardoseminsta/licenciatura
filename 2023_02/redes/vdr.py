@@ -21,6 +21,7 @@ class Roteador:
 roteador_A = Roteador("A")
 roteador_A.adicionar_rota("B", 1, "B")
 roteador_A.adicionar_rota("C", 3, "C")
+roteador_A.adicionar_rota("D", 3, "D")
 
 roteador_B = Roteador("B")
 roteador_B.adicionar_rota("A", 1, "A")
