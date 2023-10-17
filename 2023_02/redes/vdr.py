@@ -1,7 +1,7 @@
 class Roteador:
     def __init__(self, nome):
         self.nome = nome
-        self.tabela_rotas = {}  # Tabela de roteamento inicialmente vazia
+        self.tabela_rotas = {self.nome: (0, "-")}  # Tabela de roteamento inicialmente vazia
 
     def adicionar_rota(self, destino, custo, proximo_salto):
         self.tabela_rotas[destino] = (custo, proximo_salto)
@@ -16,6 +16,7 @@ class Roteador:
         print(f"Tabela de Roteamento do Roteador {self.nome}:")
         for destino, (custo, proximo_salto) in self.tabela_rotas.items():
             print(f"Destino: {destino}, Custo: {custo}, Próximo Salto: {proximo_salto}")
+            
 
 # Exemplo de uso
 roteador_A = Roteador("A")
